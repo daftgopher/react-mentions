@@ -598,7 +598,7 @@ const MentionsInput = React.createClass({
 
     var onAdd = mentionDescriptor.props.onAdd;
     if(onAdd) {
-      onAdd(suggestion);
+      onAdd(suggestion.id, suggestion.display, suggestion);
     }
 
     // Make sure the suggestions overlay is closed
